@@ -36,7 +36,7 @@ int Display(struct Node *N){
 int DisplayReverse(struct Node *N){
 
    if(N != NULL){
-     Display(N->Next);
+     DisplayReverse(N->Next);
      cout << N->Data << "\t";
    }
 }
